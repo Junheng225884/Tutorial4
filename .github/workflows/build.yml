@@ -16,10 +16,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
-    - name: Set up JDK 17  # 设置 JDK 版本，这里是 17，你可以根据实际使用的 JDK 版本修改
+    - name: Set up JDK 22  # 设置 JDK 版本，这里是 17，你可以根据实际使用的 JDK 版本修改
       uses: actions/setup-java@v4
       with:
-        java-version: '17'
+        java-version: '22'
         distribution: 'temurin'
 
     - name: Run Maven build  # 新增的任务，用于执行 Maven 构建
